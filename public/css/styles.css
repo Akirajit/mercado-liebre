@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+header {
+  background-color: #eac926;
+  padding: 0 20px;
+}
+
+#logo {
+  height: 40px;
+  margin: 20px;
+}
+
+#barra-busqueda {
+  background-color: white;
+  color: #666;
+  border: 1px solid black;
+  width: 200px;
+}
+
+#icono-busqueda {
+  border: 1px solid black;
+  margin-top: 3px;
+  padding: 2.5px;
+  background-color: #ebebeb;
+}
+
+#compra-en-cuotas {
+  margin-left: 40px;
+}
+#texto-compra-en-cuotas {
+  display: inline;
+  margin-left: 2px;
+  font-size: 14px;
+}
+
+#listado-links01 {
+  margin: 20px 0;
+}
+
+.link-seccion a {
+  text-decoration: none;
+  color: black;
+}
+
+#link005,
+#link006,
+#link007 {
+  display: inline;
+}
+
+#menu-hamburguesa-container {
+  text-align: center;
+}
+#menu-hamburguesa {
+  background-color: #1259c3;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#imagen-banner {
+  width: 100%;
+}
+
+#seccion-ultima-visita img,
+#seccion-ofertas img {
+  height: 250px;
+}
+
+#footer {
+  background-color: white;
+  padding: 10px;
+}
+
+#footer li {
+  margin: 40px;
+}
