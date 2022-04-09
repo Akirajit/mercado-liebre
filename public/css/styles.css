@@ -1,3 +1,10 @@
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
 * {
   margin: 0;
 }
@@ -9,11 +16,18 @@ ul {
 
 body {
   background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   background-color: #eac926;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+}
+
+header p,
+a,
+i {
+  font-size: 12px;
 }
 
 #logo {
@@ -21,6 +35,9 @@ header {
   margin: 20px;
 }
 
+#seccion-busqueda {
+  margin-left: 20px;
+}
 #barra-busqueda {
   background-color: white;
   color: #666;
@@ -36,12 +53,11 @@ header {
 }
 
 #compra-en-cuotas {
-  margin-left: 40px;
+  margin-top: 10px;
+  margin-left: 60px;
 }
 #texto-compra-en-cuotas {
   display: inline;
-  margin-left: 2px;
-  font-size: 14px;
 }
 
 #listado-links01 {
@@ -75,6 +91,19 @@ header {
   width: 100%;
 }
 
+main h2 {
+  margin: 20px 10px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+#seccion-ultima-visita,
+#seccion-ofertas {
+  text-align: center;
+}
+
 #seccion-ultima-visita img,
 #seccion-ofertas img {
   height: 250px;
@@ -87,4 +116,18 @@ header {
 
 #footer li {
   margin: 40px;
+}
+
+.iconos-footer {
+  font-size: 2em;
+  color: #1259c3;
+  margin-bottom: 10px;
+}
+
+.footer-centrado {
+  text-align: center;
+}
+
+.texto-footer {
+  font-size: 12px;
 }
