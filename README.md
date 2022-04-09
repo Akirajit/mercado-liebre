@@ -24,4 +24,4 @@ Inicializar el proyecto
 ```
 node app.js
 ```
-Abrir [localhost](localhost:3000) en el navegador web
+Abrir [localhost](https://localhost:3000) en el navegador web
