@@ -91,12 +91,16 @@ i {
   width: 100%;
 }
 
-main h2 {
-  margin: 20px 10px;
+/*------ MAIN ------ */
+main {
+  width: 90%;
+
+  margin: auto;
 }
 
-article {
-  margin-bottom: 60px;
+main h2 {
+  margin: 20px 10px;
+  color: #666;
 }
 
 #seccion-ultima-visita,
@@ -104,11 +108,45 @@ article {
   text-align: center;
 }
 
+/*------ PRODUCTO------ */
+article {
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.descripcion-producto {
+  border: solid 1px #ebebeb;
+  padding: 15px;
+  text-align: left;
+}
+
+.icono-envio-producto {
+  color: #39b54a;
+  font-size: 16px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  border: 1px solid #39b54a ;
+  padding: 10px;
+}
+.descuento-producto {
+  color: #39b54a;
+}
+
+.titulo-producto {
+  color: #666;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
 #seccion-ultima-visita img,
 #seccion-ofertas img {
   height: 250px;
 }
 
+
+
+/* ------ FOOTER ------ */
 #footer {
   background-color: white;
   padding: 10px;
