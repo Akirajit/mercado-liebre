@@ -1,37 +1,62 @@
-<!-- 
-    TODO:
-    *agregar la etiqueta <form>
-    *crear las etiquedas de cada campo y aplicar su id y su for
-    *crear elementos de entrada de datos para cada campo
-        <label for="email" id="emaillabel">Email:</label>
-        <input type="email" id="email">
-    FIXME:
-
- -->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-</head>
-<body>
-    <form action="register.html" method="POST">
-        <label for="nombre-apellido">Nombre y Apellido</label>
-        <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido">
-        <label for="nombre-usuario">Nombre de usuari@</label>
-        <input type="text" id="nombre-usuario" placeholder="Nombre de usuario">
-        <label for="fecha-nacimiento">Fecha de fecha-nacimiento</label>
-        <input type="date" id="fecha-nacimiento" placeholder="Fecha de fecha-nacimiento">
-        <label for="domicilio">Domicilio</label>
-        <input type="text" id="domicilio" placeholder="Domicilio">
-        <label for="perfil-usuario">Perfil de usuario</label>
-        <input type="radio" name="perfil" id="comprador">
-        <label for="comprador">Comprador</label>
-        <input type="radio" name="perfil" id="vendedor">
-        <label for="vendedor">Vendedor</label>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- font awesome icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="register.html" method="GET">
+      <label for="nombre-apellido">Nombre y Apellido</label>
+      <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido" />
+      <label for="nombre-usuario" >Nombre de usuari@</label>
+      <input type="text" id="nombre-usuario" minlength="3" placeholder="Nombre de usuario" required />
+      <label for="fecha-nacimiento">Fecha de fecha-nacimiento</label>
+      <input
+        type="date"
+        id="fecha-nacimiento"
+        placeholder="Fecha de fecha-nacimiento"
+      />
+      <label for="domicilio">Domicilio</label>
+      <input type="text" id="domicilio" placeholder="Domicilio" />
+      <label for="perfil-usuario">Perfil de usuario</label>
+      <input type="radio" name="perfil" id="comprador" />
+      <label for="comprador">Comprador</label>
+      <input type="radio" name="perfil" id="vendedor" />
+      <label for="vendedor">Vendedor</label>
+      <label for="intereses">Intereses:</label>
+      <input type="checkbox" name="intereses" id="electro" />
+      <label for="electro">Electro</label>
+      <input type="checkbox" name="intereses" id="moda" />
+      <label for="moda">Moda</label>
+      <input type="checkbox" name="intereses" id="hogar" />
+      <label for="hogar">Hogar</label>
+      <input type="checkbox" name="intereses" id="jugueteria" />
+      <label for="jugueteria">Jugueteria</label>
+      <input type="checkbox" name="intereses" id="vidasana" />
+      <label for="vidasana">Vida sana</label>
+      <img src="" alt="" />
+      <label for="contrasenia">Contraseña</label>
+      <input type="password" id="contrasenia" />
+      <label for="confirmar-contrasenia">Confirmar contraseña</label>
+      <input type="password" id="confirmar-contraseni" />
+      <button type="submit">Enviar</button>
+      <button type="reset">Resetear</button>
     </form>
-</body>
+  </body>
 </html>

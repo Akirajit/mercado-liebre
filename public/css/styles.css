@@ -27,9 +27,6 @@ header {
   flex-direction: column;
 }
 
-nav {
-  display: none;
-}
 
 header p,
 a,
@@ -71,7 +68,11 @@ i {
   display: inline;
 }
 
-#listado-links01 {
+.navbar {
+  display: none;
+}
+
+#site-navbar {
   margin: 20px 0;
 }
 
@@ -113,6 +114,7 @@ main {
 main h2 {
   margin: 20px 10px;
   color: #666;
+  font-size: 1.4em;
 }
 
 #seccion-ultima-visita,
@@ -120,12 +122,14 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items:center;
+  align-items: stretch;
 }
 
 /*------ PRODUCTO------ */
 .producto {
   display: flex;
   flex-direction: column;
+  min-width: 166px;
 }
 
 main section article i {
@@ -167,7 +171,7 @@ article {
 }
 
 .descripcion-producto {
-  border: solid 1px #ebebeb;
+  border-top: solid 1px #ebebeb;
   padding: 15px;
   text-align: left;
   position: relative;
@@ -183,14 +187,32 @@ article {
 
 #seccion-ultima-visita img,
 #seccion-ofertas img {
-  width: 70%;
-  align-self: center;
+  width: 100%;
 }
 
 #seccion-ultima-visita,
 #seccion-ofertas {
   display: flex;
   flex-direction: column;
+}
+
+/* ------ FORM ------ */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  margin: 5% auto;
+}
+
+
+#nombre-usuario:invalid {
+  border: 1px solid red;
+}
+
+#nombre-usuario:invalid:focus {
+  color: red;
+
 }
 
 /* ------ FOOTER ------ */
@@ -217,8 +239,12 @@ article {
   font-size: 12px;
 }
 
+/* --------------------------------*/
 /* --------- RESPONSIVE ---------- */
+/* --------------------------------*/
 
+
+/* ----------TABLETS---------*/
 @media (min-width: 361px) {
   .titulo-producto {
     display: block;
@@ -226,8 +252,16 @@ article {
   .producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
+  .navbar {
+    display: block;
+  }
+  #menu-hamburguesa {
+    display: none;
+  }
 }
 
+
+/* ----------DESKTOP---------*/
 @media (min-width: 481px) {
   #seccion-ultima-visita,
   #seccion-ofertas {
