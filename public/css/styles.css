@@ -79,6 +79,7 @@ width: 100%;
 
 #compra-en-cuotas {
   margin-top: 10px;
+  text-align: right;
   /* border: 1px solid red; */
 }
 #texto-compra-en-cuotas {
@@ -220,12 +221,39 @@ article {
 }
 
 /* ------ FORM ------ */
+
 form {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 90%;
   text-align: center;
   margin: 5% auto;
+  max-width: 70%;
+  /* border: 1px solid red; */
+}
+
+form input {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 40px;
+  width: 100%;
+ 
+}
+
+form button {
+  color: white;
+  background-color: #1259c3;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor:pointer;
+  
+}
+
+form input:focus {
+outline: none;
+border: 1px solid #1259c3;
 }
 
 #nombre-usuario:invalid {
@@ -235,6 +263,10 @@ form {
 #nombre-usuario:invalid:focus {
   color: red;
 }
+
+
+
+
 
 /* ------ FOOTER ------ */
 #footer {
@@ -286,6 +318,7 @@ form {
   .header-top {
     justify-content: space-between;
   }
+
 }
 
 /* ----------DESKTOP---------*/
