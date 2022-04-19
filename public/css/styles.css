@@ -33,7 +33,7 @@ i {
   font-size: 14px;
 }
 
-.header-top{
+.header-top {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,13 +41,10 @@ i {
   flex-wrap: wrap;
 }
 
-
-
 #logo {
   height: 80px;
   width: 50%;
   /* border: 1px solid red; */
-
 }
 
 #seccion-busqueda {
@@ -57,10 +54,10 @@ i {
 }
 
 #barra-busqueda {
-border: none;
-padding: 5px;
-border-radius: 5px;
-width: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 #barra-busqueda:focus {
@@ -119,7 +116,7 @@ width: 100%;
 #menu-hamburguesa {
   background-color: #1259c3;
   color: white;
-  padding: 10px;
+  padding: 6px;
   border-radius: 10%;
   font-size: 25px;
   margin-bottom: 20px;
@@ -228,7 +225,7 @@ form {
   width: 90%;
   text-align: center;
   margin: 5% auto;
-  max-width: 70%;
+
   /* border: 1px solid red; */
 }
 
@@ -238,7 +235,43 @@ form input {
   padding: 5px;
   margin-bottom: 40px;
   width: 100%;
- 
+}
+
+form input[type="radio"] {
+  margin-bottom: 0px;
+  width: auto;
+}
+
+form input[type="checkbox"] {
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.intereses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.perfil-usuario-container {
+  display: flex;
+}
+
+#comprador,
+#vendedor,
+#vendedor-label,
+#comprador-label {
+  margin-right: 20px;
+}
+
+form label {
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.title-label {
+  font-weight: bold;
 }
 
 form button {
@@ -247,13 +280,13 @@ form button {
   border: none;
   padding: 5px;
   border-radius: 5px;
-  cursor:pointer;
-  
+  cursor: pointer;
+  margin: 10px 0;
 }
 
 form input:focus {
-outline: none;
-border: 1px solid #1259c3;
+  outline: none;
+  border: 1px solid #1259c3;
 }
 
 #nombre-usuario:invalid {
@@ -263,10 +296,6 @@ border: 1px solid #1259c3;
 #nombre-usuario:invalid:focus {
   color: red;
 }
-
-
-
-
 
 /* ------ FOOTER ------ */
 #footer {
@@ -312,13 +341,14 @@ border: 1px solid #1259c3;
   #menu-hamburguesa {
     display: none;
   }
-  #logo, #seccion-busqueda, #compra-en-cuotas {
+  #logo,
+  #seccion-busqueda,
+  #compra-en-cuotas {
     width: 33%;
   }
   .header-top {
     justify-content: space-between;
   }
-
 }
 
 /* ----------DESKTOP---------*/
@@ -333,6 +363,9 @@ border: 1px solid #1259c3;
   article {
     width: 40%;
     margin-bottom: 60px;
+  }
+  form {
+    max-width: 70%;
   }
 }
 

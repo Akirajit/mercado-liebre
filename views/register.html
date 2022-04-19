@@ -75,45 +75,65 @@
       </div>
     </header>
     <form action="register.html" method="GET">
-      <label for="nombre-apellido">Nombre y Apellido</label>
+ 
       <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido" />
-      <label for="nombre-usuario">Nombre de usuari@</label>
+
       <input
         type="text"
         id="nombre-usuario"
-        minlength="3"
+        minlength="1"
         placeholder="Nombre de usuario"
         required
       />
-      <label for="fecha-nacimiento">Fecha de fecha-nacimiento</label>
+      <input
+        type="email"
+        id="email"
+        minlength="1"
+        placeholder="Email"
+        required
+      />
+      <label for="fecha-nacimiento" class="title-label">Fecha de nacimiento</label>
       <input
         type="date"
         id="fecha-nacimiento"
         placeholder="Fecha de fecha-nacimiento"
       />
-      <label for="domicilio">Domicilio</label>
       <input type="text" id="domicilio" placeholder="Domicilio" />
-      <label for="perfil-usuario">Perfil de usuario</label>
-      <input type="radio" name="perfil" id="comprador" />
-      <label for="comprador">Comprador</label>
-      <input type="radio" name="perfil" id="vendedor" />
-      <label for="vendedor">Vendedor</label>
-      <label for="intereses">Intereses:</label>
-      <input type="checkbox" name="intereses" id="electro" />
-      <label for="electro">Electro</label>
-      <input type="checkbox" name="intereses" id="moda" />
-      <label for="moda">Moda</label>
-      <input type="checkbox" name="intereses" id="hogar" />
-      <label for="hogar">Hogar</label>
-      <input type="checkbox" name="intereses" id="jugueteria" />
-      <label for="jugueteria">Jugueteria</label>
-      <input type="checkbox" name="intereses" id="vidasana" />
-      <label for="vidasana">Vida sana</label>
+      <label for="perfil-usuario" class="title-label">Perfil del usuario</label>
+      <div class="perfil-usuario-container">
+        <input type="radio" name="perfil" id="comprador" />
+        <label for="comprador" id="comprador-label">Comprador</label>
+        <input type="radio" name="perfil" id="vendedor" />
+        <label for="vendedor" id="vendedor-label">Vendedor</label>
+      </div>
+      <label for="intereses" class="title-label">Intereses:</label>
+      <div class="intereses-container">
+        <div>
+          <input type="checkbox" name="intereses" id="electro" />
+          <label for="electro">Electro</label>
+        </div>
+        <div>
+          <input type="checkbox" name="intereses" id="moda" />
+          <label for="moda">Moda</label>
+        </div>
+        <div>
+          <input type="checkbox" name="intereses" id="hogar" />
+          <label for="hogar">Hogar</label>
+        </div>
+        <div>
+          <input type="checkbox" name="intereses" id="jugueteria" />
+          <label for="jugueteria">Jugueteria</label>
+        </div>
+        <div>
+          <input type="checkbox" name="intereses" id="vidasana" />
+          <label for="vidasana">Vida sana</label>
+        </div>
+      </div>
       <img src="" alt="" />
-      <label for="contrasenia">Contraseña</label>
-      <input type="password" id="contrasenia" />
-      <label for="confirmar-contrasenia">Confirmar contraseña</label>
-      <input type="password" id="confirmar-contraseni" />
+
+      <input type="password" id="contrasenia"  placeholder="Contraseña" />
+ 
+      <input type="password" id="confirmar-contraseni" placeholder="Confirmar contraseña"/>
       <button type="submit">Enviar</button>
       <button type="reset">Resetear</button>
     </form>
