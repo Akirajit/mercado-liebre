@@ -1,79 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-     <!-- fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link
-       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-       rel="stylesheet"
-     />
-     <!-- css -->
-     <link rel="stylesheet" href="/css/styles.css" />
-     <!-- font awesome icons -->
-     <link
-       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-       rel="stylesheet"
-     />
-</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre - Login</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- font awesome icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
 <body>
-    <header>
-        <div class="header-top">
-          <img id="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" />
-          <div id="seccion-busqueda">
-            <input
-              type="text"
-              id="barra-busqueda"
-              placeholder="Buscar productos, marcas"
-            />
-            <i id="icono-busqueda" class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div id="compra-en-cuotas">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            <p id="texto-compra-en-cuotas">
-              Comprá en cuotas y sin tarjeta de crédito
-            </p>
-          </div>
+  <header>
+    <div class="header-top">
+      <img id="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" />
+      <form action="/" method="GET" id="seccion-busqueda">
+        <input
+          type="text"
+          id="barra-busqueda"
+          placeholder="Buscar productos, marcas"
+        />
+        <button type="submit">
+          <i id="icono-busqueda" class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <div id="compra-en-cuotas">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <p id="texto-compra-en-cuotas">
+          Comprá en cuotas y sin tarjeta de crédito
+        </p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <ul id="site-navbar">
+        <li id="link001" class="link-seccion"><a href="#">Ofertas</a></li>
+        <li id="link002" class="link-seccion">
+          <a href="#">Tiendas Oficiales</a>
+        </li>
+        <li id="link003 " class="link-seccion"><a href="#">Vender</a></li>
+        <li id="link004" class="link-seccion"><a href="#">Ayuda</a></li>
+      </ul>
+      <ul id="login-navbar">
+        <div>
+          <li id="link005" class="link-seccion">
+            <a href="register">Creá tu cuenta</a>
+          </li>
+          <i class="fa-solid fa-id-card"></i>
         </div>
-  
-        <nav class="navbar">
-          <ul id="site-navbar">
-            <li id="link001" class="link-seccion"><a href="#">Ofertas</a></li>
-            <li id="link002" class="link-seccion">
-              <a href="#">Tiendas Oficiales</a>
-            </li>
-            <li id="link003 " class="link-seccion"><a href="#">Vender</a></li>
-            <li id="link004" class="link-seccion"><a href="#">Ayuda</a></li>
-          </ul>
-          <ul id="login-navbar">
-            <div>
-              <li id="link005" class="link-seccion">
-                <a href="register">Creá tu cuenta</a>
-              </li>
-              <i class="fa-solid fa-id-card"></i>
-            </div>
-            <div>
-              <li id="link006" class="link-seccion">
-                <a href="login">Ingresá</a>
-              </li>
-              <i class="fa-solid fa-arrow-right-to-bracket"></i>
-            </div>
-            <div>
-              <li id="link007" class="link-seccion">
-                <a href="#">Mis compras</a>
-              </li>
-              <i class="fa-solid fa-basket-shopping"></i>
-            </div>
-          </ul>
-        </nav>
-        <div id="menu-hamburguesa-container">
-          <i id="menu-hamburguesa" class="fas fa-bars"></i>
+        <div>
+          <li id="link006" class="link-seccion">
+            <a href="login">Ingresá</a>
+          </li>
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
         </div>
-      </header>
+        <div>
+          <li id="link007" class="link-seccion">
+            <a href="#">Mis compras</a>
+          </li>
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+      </ul>
+    </nav>
+    <div id="menu-hamburguesa-container">
+      <i id="menu-hamburguesa" class="fas fa-bars"></i>
+    </div>
+  </header>
     <form id="form-login" action="/" method="GET">
      
         <input type="text" id="nombre-usuario" placeholder="Nombre de usuario">

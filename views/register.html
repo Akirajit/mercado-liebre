@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Mercado Liebre - Register</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,14 +24,16 @@
     <header>
       <div class="header-top">
         <img id="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" />
-        <div id="seccion-busqueda">
+        <form action="/" method="GET" id="seccion-busqueda">
           <input
             type="text"
             id="barra-busqueda"
             placeholder="Buscar productos, marcas"
           />
-          <i id="icono-busqueda" class="fa-solid fa-magnifying-glass"></i>
-        </div>
+          <button type="submit">
+            <i id="icono-busqueda" class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
         <div id="compra-en-cuotas">
           <i class="fa-solid fa-hand-holding-dollar"></i>
           <p id="texto-compra-en-cuotas">
@@ -76,7 +78,7 @@
     </header>
     <form id="form-register" action="/" method="GET">
  
-      <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido" />
+      <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido" minlength="1" required/>
 
       <input
         type="text"
@@ -92,11 +94,12 @@
         placeholder="Email"
         required
       />
-      <label for="fecha-nacimiento" class="title-label">Fecha de nacimiento</label>
+      <label for="fecha-nacimiento" class="title-label" >Fecha de nacimiento</label>
       <input
         type="date"
         id="fecha-nacimiento"
         placeholder="Fecha de fecha-nacimiento"
+        required
       />
       <input type="text" id="domicilio" placeholder="Domicilio" />
       <label for="perfil-usuario" class="title-label">Perfil del usuario</label>
@@ -131,9 +134,9 @@
       </div>
       <img src="" alt="" />
 
-      <input type="password" id="contrasenia"  placeholder="Contraseña" />
+      <input type="password" id="contrasenia"  placeholder="Contraseña" required />
  
-      <input type="password" id="confirmar-contraseni" placeholder="Confirmar contraseña"/>
+      <input type="password" id="confirmar-contraseni" placeholder="Confirmar contraseña" required/>
       <button type="submit">Enviar</button>
       <button type="reset">Resetear</button>
     </form>

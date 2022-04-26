@@ -316,7 +316,8 @@ article {
   border: 1px solid #1259c3;
 }
 
-#nombre-usuario:invalid {
+
+#form-register input:invalid {
   border: 1px solid red;
 }
 
