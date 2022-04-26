@@ -5,6 +5,8 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a; */
 
+
+/* -----RESETEOS GENERALES ----- */
 * {
   margin: 0px;
   padding: 0px;
@@ -21,6 +23,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+
+
+/* ---- HEADER ----- */
 header {
   background-color: #eac926;
   display: flex;
@@ -50,7 +55,6 @@ i {
 #seccion-busqueda {
   position: relative;
   width: 50%;
-  /* border: 1px solid red; */
 }
 
 #barra-busqueda {
@@ -62,6 +66,12 @@ i {
 
 #barra-busqueda:focus {
   outline: none;
+}
+
+#seccion-busqueda button {
+background: none;
+border: 0;
+cursor: pointer;
 }
 
 #icono-busqueda {
@@ -129,7 +139,6 @@ i {
 /*------ MAIN ------ */
 main {
   width: 90%;
-
   margin: auto;
 }
 
@@ -144,7 +153,6 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: stretch;
 }
 
 /*------ PRODUCTO------ */
@@ -152,6 +160,25 @@ main h2 {
   display: flex;
   flex-direction: column;
   min-width: 166px;
+  transition: all 450ms;
+}
+
+.producto:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/* la regla se aplica sobre descripcion producto,
+pero al hacer hover sobre el elemento padre  */
+.producto:hover .descripcion-producto {
+  display: block;
+}
+
+.icono-envio-producto {
+  transition: all 450ms;
+}
+
+.icono-envio-producto:hover {
+  transform: rotate(-90deg);
 }
 
 main section article i {
@@ -192,6 +219,7 @@ article {
 }
 
 .descripcion-producto {
+  display: none;
   border-top: solid 1px #ebebeb;
   padding: 15px;
   text-align: left;
@@ -217,19 +245,18 @@ article {
   flex-direction: column;
 }
 
-/* ------ FORM ------ */
+/* ------ FORMS REGISTER Y LOGIN------ */
 
-form {
+#form-login , #form-register {
   display: flex;
   flex-direction: column;
   width: 90%;
   text-align: center;
   margin: 5% auto;
-
   /* border: 1px solid red; */
 }
 
-form input {
+#form-login input ,  #form-register input  {
   border-radius: 5px;
   border: none;
   padding: 5px;
@@ -237,12 +264,12 @@ form input {
   width: 100%;
 }
 
-form input[type="radio"] {
+#form-register input[type="radio"] {
   margin-bottom: 0px;
   width: auto;
 }
 
-form input[type="checkbox"] {
+#form-register input[type="checkbox"] {
   margin-bottom: 20px;
   width: auto;
 }
@@ -265,7 +292,7 @@ form input[type="checkbox"] {
   margin-right: 20px;
 }
 
-form label {
+#form-register  label {
   margin-bottom: 20px;
   align-self: flex-start;
 }
@@ -274,7 +301,7 @@ form label {
   font-weight: bold;
 }
 
-form button {
+#form-login button ,  #form-register button  {
   color: white;
   background-color: #1259c3;
   border: none;
@@ -284,7 +311,7 @@ form button {
   margin: 10px 0;
 }
 
-form input:focus {
+#form-login input:focus , #form-register input:focus  {
   outline: none;
   border: 1px solid #1259c3;
 }
@@ -297,6 +324,14 @@ form input:focus {
   color: red;
 }
 
+.boton-enviar-login:hover {
+  transition: all 450ms;
+}
+
+.boton-enviar-login:hover {
+  background-color: #0022aa;
+}
+
 /* ------ FOOTER ------ */
 #footer {
   background-color: white;
@@ -305,6 +340,14 @@ form input:focus {
 
 #footer li {
   margin: 40px;
+}
+
+#footer p {
+  text-align: center;
+}
+
+#footer i:hover {
+  color: #39b54a;
 }
 
 .iconos-footer {
@@ -330,9 +373,9 @@ form input:focus {
   .titulo-producto {
     display: block;
   }
-  .producto {
+  /* .producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
+  } */
   .navbar {
     display: flex;
     align-items: center;
@@ -348,6 +391,7 @@ form input:focus {
   }
   .header-top {
     justify-content: space-between;
+    /* border: 1px solid red; */
   }
 }
 
@@ -366,6 +410,9 @@ form input:focus {
   }
   form {
     max-width: 70%;
+  }
+  footer ul {
+    display: flex;
   }
 }
 

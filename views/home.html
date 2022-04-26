@@ -23,17 +23,18 @@
 
   <body>
     <header>
-      
       <div class="header-top">
         <img id="logo" src="/images/logo-mercado-liebre.svg" alt="Logo" />
-        <div id="seccion-busqueda">
+        <form action="/" method="GET" id="seccion-busqueda">
           <input
             type="text"
             id="barra-busqueda"
             placeholder="Buscar productos, marcas"
           />
-          <i id="icono-busqueda" class="fa-solid fa-magnifying-glass"></i>
-        </div>
+          <button type="submit">
+            <i id="icono-busqueda" class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
         <div id="compra-en-cuotas">
           <i class="fa-solid fa-hand-holding-dollar"></i>
           <p id="texto-compra-en-cuotas">
@@ -233,10 +234,8 @@
             puedas hacer, porque estás siempre protegid@.
           </p>
         </li>
-        <li>
-          <p class="texto-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-        </li>
       </ul>
+      <p class="texto-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
   </body>
 </html>
